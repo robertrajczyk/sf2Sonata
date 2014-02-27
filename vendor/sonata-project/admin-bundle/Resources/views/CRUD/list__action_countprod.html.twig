@@ -1,0 +1,6 @@
+{% if admin.isGranted('VIEW', object) and admin.hasRoute('show') %}
+    <div class="btn view_link btn-small"  >
+        <i class="icon-zoom-in"></i>
+        Start {{object.id}}
+    </div>
+{% endif %}
